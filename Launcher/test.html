@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Launcher</title>
+    <script>
+
+        window.external.setTitle(document.title);
+        window.external.restore();
+
+    </script>
+</head>
+<body>
+    <ul>
+        <li><a href="javascript:window.external.showMessage('test!')">Just a test</a></li>
+        <li><a href="javascript:window.external.setSize(300,200,false)">resize without center</a></li>
+        <li><a href="javascript:window.external.setSize(600,400)">resize and center</a></li>
+        <li><a href="javascript:window.external.setRelativeSize(80,20)">resize relative and center</a></li>
+        <li><a href="javascript:window.external.launchLocal('C:\\0000\\text.txt')">open a file</a></li>
+        <li><a href="javascript:window.external.launchLocal('C:\\Windows\\notepad.exe')">start a program</a></li>
+        <li><a href="javascript:window.external.enableScrollbars(false)">hide the scrollbars</a></li>
+        <li><a href="javascript:window.external.enableScrollbars()">show the scrollbars</a></li>
+        <li><a href="javascript:window.external.navigateInLauncher(true)">open links in launcher</a></li>
+        <li><a href="javascript:window.external.navigateInLauncher(false)">open links in external browser</a></li>
+        <li><a href="http://google.com">Regular link to Google</a></li>
+    </ul>
+</body>
+</html>
